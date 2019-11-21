@@ -29,7 +29,7 @@ class School
         @roster.each {|k, v|
             v.sort!
         }
-        @roster.sort.to_h #
+        @roster.to_h
 
     end 
 
