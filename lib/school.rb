@@ -14,7 +14,8 @@ class School
         if @roster[grade]
             @roster[grade].push(name) 
         else 
-            @roster[grade] = [name]
+            @roster[grade] = []
+            @roster[grade] << name
         end 
     end #this is the end of the add_student method
 
@@ -28,7 +29,7 @@ class School
         @roster.each {|k, v|
             v.sort!
         }
-        @roster.sort.to_h
+        @roster.sort.to_h #
 
     end 
 
